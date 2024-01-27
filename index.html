@@ -1,0 +1,82 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+
+<div class="w3-container">
+ <img src="ofccigaret.jpg" height="50%" width="100%">
+</div>
+
+<div class="w3-bar w3-blue w3-card-4">
+ <div class="w3-dropdown-hover">
+  <button class="w3-button">Juara</button>
+  <div class="w3-dropdown-content w3-bar-block w3-card-4">
+   <button class="w3-bar-item w3-button" onclick="openKota('Juara1')">Juara1</button>
+   <button class="w3-bar-item w3-button" onclick="openKota('Juara2')">Juara2</button>
+  </div>
+ </div>
+ <div class="w3-dropdown-hover">
+  <button class="w3-button">Juri</button>
+  <div class="w3-dropdown-content w3-bar-block w3-card-4">
+   <button class="w3-bar-item w3-button" onclick="openKota('Juri1')">Juri1</button>
+   <button class="w3-bar-item w3-button" onclick="openKota('Juri2')">Juri2</button>
+  </div>
+ </div>
+ <div class="w3-dropdown-hover">
+  <button class="w3-button">Pasukan</button>
+  <div class="w3-dropdown-content w3-bar-block w3-card-4">
+   <button class="w3-bar-item w3-button" onclick="openKota('Pasukan1')">Pasukan1</button>
+   <button class="w3-bar-item w3-button" onclick="openKota('Pasukan2')">Pasukan2</button>
+   <button class="w3-bar-item w3-button" onclick="openKota('Pasukan3')">Pasukan3</button>
+  </div>
+ </div>
+</div>
+
+<div id="Juara1" class="w3-container kota" style="display:none">
+ <h2>Juara1</h2>
+ <img src="juara.jpg">
+</div>
+
+<div id="Juara2" class="w3-container kota" style="display:none">
+ <h2>Garut</h2>
+ <img src="juara2.jpg">
+</div>
+
+<div id="Juri1" class="w3-container kota" style="display:none">
+ <h2>Juri1</h2>
+ <img src="juri1.jpg">
+</div>
+
+<div id="Juri2" class="w3-container kota" style="display:none">
+ <h2>Juri2</h2>
+ <img src="juri2.jpg">
+</div>
+
+<div id="Pasukan1" class="w3-container kota" style="display:none">
+ <h2>Pasukan1</h2>
+ <img src="pasukan1.jpg">
+</div>
+
+<div id="Pasukan2" class="w3-container kota" style="display:none">
+ <h2>Pasukan2</h2>
+ <img src="pasukan2.jpg">
+</div>
+
+<div id="Pasukan3" class="w3-container kota" style="display:none">
+ <h2>Pasukan3</h2>
+ <img src="pasukan3.jpg">
+</div>
+
+
+<script>
+function openKota(namaKota) {
+ var i;
+ var x = document.getElementsByClassName("kota");
+ for (i = 0; i < x.length; i++) {
+  x[i].style.display = "none";
+ }
+ document.getElementById(namaKota).style.display = "block";
+}
+
+
+
+</script>
+ 
